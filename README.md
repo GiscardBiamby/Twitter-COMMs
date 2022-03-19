@@ -1,12 +1,13 @@
-# Twitter-COMMs
+# Twitter-COMMs: Detecting Climate, COVID, and Military Multimodal Misinformation
 
-Our technical report can be found here: <https://arxiv.org/abs/2112.08594>
+This repository contains a large-scale multimodal
+dataset with 884k tweets relevant to the topics of Climate Change, COVID-19, and Military Vehicles. Our technical report can be found here: <https://arxiv.org/abs/2112.08594>
 
-## Data
+## Getting Started
 
-The NewsCLIPpings style training set, which includes both pristine and falsified samples, used in the paper are in the `./data/news_clippings/` folder.
+1. Download our dataset of multimodal tweets from `./data/original/twitter_comms_dataset.csv`. Twitter restricts distribution of data pulled from their API, so we can only share the tweet ids. To obtain captions and images, we provide scripts to rehydrate tweets and download the images in `./scripts/`.
 
-The dataset of just the Tweet_ids is in the `./data/tweets/twitter_comms_dataset.csv` file. Twitter restricts distribution of data pulled from their API, so we can only share the Tweet_id's. You can get the full data by "rehydrating" the tweets. We provide scripts to rehydrate and also download the images in `./scripts/`.
+2. Consider using our automatically generated random and hard mismatches provided in `./data/train_val` for training.
 
 ## Cite Our Work
 
@@ -20,10 +21,3 @@ The dataset of just the Tweet_ids is in the `./data/tweets/twitter_comms_dataset
       primaryClass={cs.CV}
 }
 ```
-
-## TODO
-
-* [ ] Add hydration script
-* [ ] Add image download script
-* [x] Add mod-guard nsfw annotations
-* [ ] Add training code
