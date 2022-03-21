@@ -1,0 +1,14 @@
+search_tweets_v2:
+  endpoint: https://api.twitter.com/2/tweets/search/all
+  bearer_token: AAAAAAAAAAAAAAAAAAAAAMUySgEAAAAAlWTFzd4DKy5Q9C%2B%2FhPhRRaIEM60%3D8LbvjJ5Wzn3wl8q8tgkQOLqajE9ATyVFvWUHSmcEnmCxRd7QrJ
+  # consumer_key: <CONSUMER_KEY>
+  # consumer_secret: <CONSUMER_SECRET>
+
+search_params:
+  results-per-call: 100
+  max-tweets: 100000
+  media-fields: media_key,type,duration_ms,height,preview_image_url,public_metrics,url,width,alt_text
+  place-fields: full_name,id,country,country_code,geo,name,place_type
+  tweet-fields: attachments,author_id,context_annotations,created_at,entities,geo,id,in_reply_to_user_id,lang,possibly_sensitive,public_metrics,referenced_tweets,source,text,withheld
+  user-fields: description,location,public_metrics
+  expansions: attachments.media_keys,author_id,geo.place_id
