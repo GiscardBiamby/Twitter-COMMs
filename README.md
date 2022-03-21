@@ -5,7 +5,7 @@ dataset with 884k tweets relevant to the topics of Climate Change, COVID-19, and
 
 ## Getting Started
 
-1. Download our dataset of multimodal tweets from `./data/original/twitter_comms_dataset.csv`. Twitter restricts distribution of data pulled from their API, so we can only share the tweet ids. To obtain captions and images, we provide scripts to rehydrate tweets and download the images in `./scripts/`.
+1. Download our dataset of multimodal Tweets from `./data/original/twitter_comms_dataset.csv`. Twitter restricts distribution of data pulled from their API, so we can only share the Tweet ids. There are many tools that can be used to "rehydrate" the Tweet id's into JSON containing the Tweet data (including captions and image URL's), e.g., [Hydrator](https://github.com/DocNow/hydrator), [Twarc](https://github.com/docnow/twarc/). We also provide a script to download the images, given such a JSON file. This script is provided as-is, and works on JSON downloaded from V2 of the Twitter API.
 
 2. Consider using our automatically generated random and hard mismatches provided in `./data/train_val` for training.
 
