@@ -25,7 +25,7 @@ This is a file containing all the tweet_id's for the 884K unique tweets of the T
 * `nsfw_prob` (float): A probability of whether or not the tweet image might contain nudity, which we computed using NudeNET (<https://github.com/notAI-tech/NudeNet>).
 
 `scripts/download_images.py`:
-Rehydrating only download the metadata for Tweets into JSON format. This script uses the image URL's from this JSON to download the images. Depending on which tool or script you use to rehydrate, you may have to modify the script to point it to the image URL's.
+Rehydrating only download the metadata for tweets into JSON format. This script uses the image URL's from this JSON to download the images. Depending on which tool or script you use to rehydrate, you may have to modify the script to point it to the image URL's.
 
 ## Falsified Data
 
@@ -45,7 +45,7 @@ The files are comma delimited, with the following columns:
 
 To get started:
 
-1. Hydrate the tweets using the Tweet ID's from `tweets/twitter_comms_dataset.csv`. You should get a JSON file with the captions and image paths.
+1. Hydrate the tweets using the tweet ID's from `tweets/twitter_comms_dataset.csv`. You should get a JSON file with the captions and image paths.
 2. Unzip the files `train_val/train.zip` and `train_val/val.zip`.
 3. For `train_val/train.csv` and `train_val/val.csv`, fill in the columns for `caption` and `image_path` based on the corresponding samples in `tweets/twitter_comms_dataset.csv`.
 
